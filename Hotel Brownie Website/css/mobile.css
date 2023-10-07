@@ -1,0 +1,145 @@
+/* Tablets */
+#showcase{
+    height: 600px;
+}
+
+.showcase-content h1{
+    font-size: 30px;
+}
+
+.showcase-content p{
+    font-size: 20px;
+}
+
+.showcase-content .text-primary2{
+    font-size: 65px;
+}
+
+#showcase .showcase-content{
+    margin: auto;
+}
+
+#about{
+    background: #fff;
+    height: 450px;
+    overflow: hidden;
+}
+
+#about .info-content h2{
+    border-bottom: 1px solid #efe77b;
+    margin-bottom: 2rem;
+}
+
+#about .info-left{
+    display: none;
+}
+
+#about .info-right{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+#about .info-content{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#what h2{
+    display: inline;
+    text-align: center;
+}
+
+.items{
+    flex-direction: column;
+    margin-right: 2.5rem;
+}
+
+.items .item{
+    width: 100%;
+    margin: 1rem;
+}
+
+/* Testimonials */
+.testimonials{
+    flex-direction: column;
+}
+
+.testimonials .testimonial{
+    margin-bottom: 2rem;
+}
+
+/* Smartphones */
+@media screen and (max-width: 500px){
+    #navbar{
+        flex-direction: column;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+
+    #navbar ul{
+        margin: 1rem 0;
+    }
+
+    #showcase{
+        height: 650px;
+        text-align: center;
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    #showcase .showcase-content{
+        margin-top: 12rem;
+    }
+
+    #showcase .showcase-content h1{
+        line-height: 2em;
+    }
+
+    #about{
+        height: 450px;
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    #about .info-right{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #about .info-right h2{
+        margin-top: 2rem;
+    }
+
+    #about .info-left{
+        width: auto;
+    }
+
+    .btn{
+        padding: 0.4rem 0;
+        width: 35%;
+        font-size: 17px;
+    }
+
+    .btn2{
+        width: 100px;
+    }
+
+    #testimonial-content .testimonials .testimonial{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .testimonials .testimonial img{
+        margin-left: 1rem;
+    }
+}

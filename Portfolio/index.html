@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width: 768px)" href="mobile.css">
+    <script src="https://kit.fontawesome.com/3d1c3b8140.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
+</head>
+<body id="home">
+    <div id="navbar">
+        <h1 class="text-primary4">m<span class="logo">azin</span></h1>
+        <ul>
+            <li class="first"><a class="home" href="#home">Home</a></li>
+            <li class="second"><a class="about" href="#about">About</a></li>
+            <li class="third"><a class="contact" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="header" class="bg-light">
+        <div class="info-left bg-dark">
+            <h1>Hello! I'm<span class="text-primary">Mazin</span></h1>
+            <h2><span class="text-primary2">Web</span> Developer</h2>
+            <p><span class="text-primary3">Are </span> you looking someone to build a good looking website
+            for you? Let's shake hands!</p>
+        </div>
+        <div class="main">
+            <a class="resume" href="#resume">Resume</a>
+            <a class="contact bg-dark" href="#contact">Contact</a>
+        </div>
+        <div class="info-right">
+            <img src="./portfolio.png" alt="Mazin">
+        </div>
+    </div>
+
+    <section id="about" class="p-2">
+        <div class="container">
+            <h1><span class="text-primary4">A</span>bout</h1>
+            <div class="about-info-1">
+                <p>Hi there! My name is Mazin and I'm a web developer with a passion for creating digital experiences.
+                I have done my Bachelor's in computer science from Aligarh Muslim University.</p>
+                <img class="img-1" src="./project1.png" width="200px" alt="My Project1">
+            </div>
+            <div class="about-info-2">
+                <img class="img-2" src="./project2.png" width="330px" alt="My Project2">            
+                <p>I've honed my skills in frontend
+                development always staying on the cutting edge of the technology. Skills like, good communication, problem solving
+                and time management helped me to focus more on creating responsive designs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="p-2">
+        <div class="container">
+            <div class="resume-info">
+                <div class="resume-info-1">
+                    <div class="resume-content">
+                        <h3>Educational <span class="text-secondary">Qualification <i class="fa-solid fa-building-columns"></i></span></h3>
+                        <p>Bachelor of Science (Computer Science) from Aligarh Muslim University</p>
+                    </div>
+                    <div class="resume-content skills">
+                        <h3 class="s-heading">Hard <span class="text-secondary">Skills <i class="fa-solid fa-gears"></i></span></h3>
+                        <p>HTML <br> <i class="fa-solid fa-circle fa-2xs"></i> <i class="fa-solid fa-circle fa-2xs"></i>
+                            <i class="fa-solid fa-circle fa-2xs"></i> <i class="fa-regular fa-circle fa-2xs"></i></p>
+                        <p>CSS <br> <i class="fa-solid fa-circle fa-2xs"></i> <i class="fa-solid fa-circle fa-2xs"></i>
+                            <i class="fa-solid fa-circle fa-2xs"></i> <i class="fa-regular fa-circle fa-2xs"></i></p>
+                        <p>JavaScript <br> <i class="fa-solid fa-circle fa-2xs"></i> <i class="fa-solid fa-circle fa-2xs"></i>
+                            <i class="fa-regular fa-circle fa-2xs"></i> <i class="fa-regular fa-circle fa-2xs"></i></p>
+                        <p>Photoshop <br> <i class="fa-solid fa-circle fa-2xs"></i> <i class="fa-solid fa-circle fa-2xs"></i>
+                            <i class="fa-regular fa-circle fa-2xs"></i> <i class="fa-regular fa-circle fa-2xs"></i></p>
+                    </div>
+                </div>
+                <div class="resume-info-2">
+                    <div class="resume-content">
+                        <h3>Soft <span class="text-secondary">Skills <i class="fa-solid fa-screwdriver-wrench"></i></span></h3>
+                        <p>Good Communication</p>
+                        <p>Problem Solving</p>
+                        <p>Time Management</p>
+                        <p>Creativity</p>
+                    </div>
+                    <div class="resume-content contact-me">
+                        <h3 class="s-heading">Contact <span class="text-secondary">Me <i class="fa-solid fa-envelope"></i></span></h3>
+                        <p class="mail-id">mazinshakeel72@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="p-2 bg-light">
+        <div class="container">
+            <h1><span class="text-primary4">Get</span> In Touch</h1>
+            <div class="contact-info">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email">
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="12" cols="30" id="message"></textarea>
+                    <button class="btn" type="submit">Contact</button>
+                </form>
+                <div class="links">
+                    <h2>Contact <i class="fa-solid fa-phone"></i></h2>
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/mazin-shakeel-354662238/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                </div>
+                <div class="address">
+                    <h2>Location <i class="fa-solid fa-location-dot"></i></h2>
+                    <p>Center Point, Aligarh, U.P <br>India</p>
+                </div>
+            </div>
+            <p class="footer">copyright &copy; 2023, All rights reserved</p>
+        </div>
+    </section>
+</body>
+</html>

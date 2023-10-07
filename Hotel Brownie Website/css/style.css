@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Inclusive+Sans&family=Montserrat:ital@1&family=Pacifico&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+}
+
+body{
+    font-family: 'Pacifico', cursive;
+    background: #333;
+    height: 100vh;
+}
+
+h1{
+    margin: 0.5rem 1rem;
+    padding: 1rem 1.2rem;
+}
+
+h2, h3{
+    margin: 0.2rem 0.5rem;
+    padding: 0.7rem 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0.7rem 0;
+}
+
+/* Utility Classes */
+.text-primary{
+    color: #333;
+}
+
+.text-primary2{
+    color: #efe77b;
+}
+
+.p-1{padding: 1.5rem 2rem;}
+.p-2{padding: 2rem 2.5rem;}
+.p-3{padding: 2.5rem 3rem;}
+
+.l-heading{
+    font-size: 35px;
+}
+
+.btn{
+    border-radius: 50px;
+    display: block;
+    width: 30%;
+    margin: 1rem auto;
+    padding: 0.50rem 0.75rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn1{
+    background: #efe77b;
+    color: #333;
+}
+
+.btn2{
+    background: #555;
+    color: #fff;
+    border: none;
+    width: 100px;
+    margin: auto auto auto 3rem;
+}
+
+.btn1:hover{
+    background: linear-gradient(#555, #444, #555);
+    color: #efe77b;
+}
+
+.btn2:hover{
+    background: #4f4f4f;
+    color: #f4f4f4;
+}
+
+.bg-dark{
+    background: #333;
+    color: #fff;
+}
+
+.bg-light{
+    background: #fff;
+    color: #333;
+}
+
+.bg-primary{
+    background: #efe77b;
+    color: #333;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Navbar */
+#navbar{
+    display: flex;
+    background: #e0d759;
+    color: #555;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    font-size: 17px;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: #555;
+    display: block;
+    margin: 0 0.5rem;
+    padding: 0.5rem 0.7rem;
+    text-align: center;
+}
+
+#navbar ul li a:hover{
+    background: #555;
+    color: #e0d759;
+    border-radius: 5px;
+}
+
+/* Showcase */
+#showcase{
+    height: 748px;
+    display: flex;
+    align-items: center;
+}
+
+#showcase::before{
+    content: '';
+    background: url('./images/browniehotel2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: -1;
+    height: 830px;
+    width: 100%;
+}
+
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+    color: #fff;
+}
+
+.showcase-content h1{
+    line-height: 2.7em;
+}
+
+.showcase-content .text-primary2{
+    font-size: 70px;
+}
+
+.showcase-content p{
+    font-size: 25px;
+}
+
+/* About Section */
+#about{
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #fff 0%, #fff 35%, #efe77b 35%, #efe77b 100%);
+}
+
+#about .info-left{
+    background: url('./images/browniehotel.jpg') no-repeat center center/cover;
+    width: 25%;
+    border-radius: 100%;
+    margin-left: -2.5rem;
+}
+
+#about .info-content{
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #555;
+}
+
+#about .info-right{
+    margin-left: 5.2rem;
+    line-height: 3em;
+}
+
+#about .info-right p{
+    font-size: 20px;
+}
+
+/* What Section*/
+#what h2{
+    border-bottom: 1px solid #efe77b;
+    display: inline;
+}
+
+.items{
+    display: flex;
+    margin: 4rem 0 auto 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.items .item{
+    margin: 1rem 0.75rem;
+    padding: 2rem;
+}
+
+/* Testimonials Section */
+#testimonial-content h2{
+    color: #555;
+    display: inline;
+    border-bottom: #555 1px solid;
+}
+
+#testimonial-content{
+    background: #fff;
+}
+
+#testimonial-content .testimonials{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+}
+
+#testimonial-content .testimonials .testimonial{
+    display: flex;
+    align-items: center;
+    background: #efe77b;
+    border-radius: 100px;
+    padding-right: 3rem;
+    margin: 0.50rem;
+}
+
+.commas{
+    font-size: 30px;
+}
+
+.testimonials .testimonial img{
+    border-radius: 50px;
+    padding: 0.50rem;
+    margin-right: 1rem;
+    display: block;
+}
+
+/* Contact Form */
+#contact h2{
+    color: #555;
+}
+
+#contact form{
+    margin-top: 4rem;
+}
+
+#contact .form-group{
+    text-align: left;
+    margin: auto 3rem auto 3rem;
+}
+
+#contact .form-group label{
+    display: block;
+    margin-bottom: 2px;
+}
+
+#contact .form-group input, textarea{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#contact .container{
+    padding-bottom: 2rem;
+}
+
+/* Contact Info Section */
+#contact-info{
+    background: #fff;
+}
+
+#contact-info .items{
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+/* Footer */
+footer{
+    background: #e0d759;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Landscape */
+@media screen and (max-width: 916px){
+    .showcase-content{
+        text-align: center;
+        margin: auto;
+    }
+}

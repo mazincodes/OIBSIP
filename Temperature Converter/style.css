@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    /* background: #152e2f; */
+    background: linear-gradient(#152e2f, #255152, #152e2f);
+}
+
+.container{
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    margin: 1.5rem;
+    background: linear-gradient(#ff3535, #ff7f35, #ffd335, #fcd549, #fff);
+    border-radius: 50px;
+    color: #333;
+}
+
+#temperature h2, #temperature-content, #result{
+    margin: 1.2rem auto;
+}
+
+#result h2{
+    color: #333;
+} 
+
+#temperature h2{
+    margin-bottom: 2rem;
+}
+
+#temperature .container input, select{
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#temperature #temperature-content select option{
+    background: #fff;
+    color: #333;
+}
+
+#temperature-content{
+    display: flex;
+}
+
+#degree, #type{
+    margin: auto 0.75rem;
+}
+
+.button{
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: #f4f4f4;
+    background: rgb(35, 35, 35);
+}

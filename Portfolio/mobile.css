@@ -1,0 +1,266 @@
+#navbar{
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+#navbar h1{
+    margin: auto;
+}
+
+#navbar ul{
+    margin: 1rem auto;
+}
+
+#navbar .first::after{
+    position: static;
+}
+
+#navbar .second::after{
+    position: static;
+}
+
+#navbar .third::after{
+    position: static;
+}
+
+
+#navbar .home:hover, #navbar .about:hover, #navbar .contact:hover{
+    color: #414141;
+}
+
+#header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#header .info-right img{
+    width: 180px;
+}
+
+#header .info-left{
+    width: 100%;
+    border-radius: 50px;
+    background: none;
+}
+
+#header .info-left h1, h2, p{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#header .main .contact{
+    display: none;
+}
+
+#header .info-right img{
+    position: relative;
+    top: 40px;
+    left: 35px;
+}
+
+#header .main .resume{
+    display: none;
+}
+
+#about .container{
+    margin: 2rem;
+}
+
+#about .about-info-1{
+    flex-direction: column;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#about .about-info-2{
+    flex-direction: column;
+    text-align: center;
+}
+
+#about .img-1{
+    width: 150px;
+}
+
+#about .img-2{
+    width: 280px;   
+}
+
+#resume{
+    height: 100%;
+}
+
+.resume-info{
+    flex-direction: column;
+}
+
+.resume-info-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-info .resume-content{
+    margin: 0.75rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+.resume-content .mail-id{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.resume-content h3{
+    padding-bottom: 1rem;
+}
+
+#contact .contact-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info .links{
+    position: static;
+    margin: 4rem;
+}
+
+.contact-info .address{
+    position: static;
+    margin-top: 4rem;
+}
+
+.footer{
+    position: static;
+}
+
+/* Smartphone */
+@media screen and (max-width: 500px){
+    #navbar{
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        margin: auto;
+    }
+
+    #navbar h1{
+        margin: auto;
+    }
+
+    #navbar ul{
+        margin: 1rem auto;
+    }
+
+    
+
+    /* Header Section */
+    #header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #header .info-right img{
+        width: 180px;
+    }
+
+    #header .info-left{
+        width: 100%;
+        border-radius: 50px;
+        background: none;
+    }
+
+    #header .info-left h1, h2, p{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    #header .main .contact{
+        display: none;
+    }
+
+    #header .info-right img{
+        position: relative;
+        top: 40px;
+        left: 35px;
+    }
+
+    #header .main .resume{
+        display: none;
+    }
+
+    /* About Section */
+    #about .container{
+        margin: 2rem;
+    }
+
+    #about .about-info-1{
+        flex-direction: column;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    #about .about-info-2{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .img-1{
+        width: 150px;
+    }
+
+    #about .img-2{
+        width: 280px;   
+    }
+
+    /* Resume Section */
+    .resume-info{
+        flex-direction: column;
+        margin: 1.5rem;
+    }
+
+    .resume-info-1, .resume-info-2{
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    .resume-info .resume-content{
+        margin-bottom: 2rem;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .resume-info-1 .skills br{
+        display: none;
+    }
+
+    .resume-content .mail-id{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .resume-content h3{
+        padding-bottom: 1rem;
+    }
+
+    /* Contact Section */
+    #contact .contact-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .contact-info form{
+        margin: 2rem auto 2rem auto;
+    }
+
+    #contact .contact-info .links{  
+        padding: 3rem 4rem;
+    }
+
+    /* Footer */
+    .footer{
+        text-align: center;
+    }
+}
+

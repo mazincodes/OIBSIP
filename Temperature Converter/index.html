@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3d1c3b8140.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div id="temperature">
+        <div class="container">
+            <h2>Temperature Converter <i class="fa-solid fa-temperature-high" style="color: #333;"></i></h2>
+            <div id="temperature-content">
+                <div id="degrees">
+                    <label for="number">Degrees</label>
+                    <input type="number" name="number" id="degree">
+                </div>
+                <div id="type">
+                    <label for="temperatures">Type</label>
+                    <select name="temperatures" id="temperatures">
+                        <option id="fahrenheit" value="fahrenheit">fahrenheit</option>
+                        <option id="kelvin" value="kelvin">kelvin</option>
+                    </select>
+                </div>
+            </div>
+            <div id="result">
+                <label for="number2">Result (Celcius)</label>
+                <h2 class="celcius"></h2>
+            </div>
+            
+            <button class="button">Convert</button>
+        </div>
+    </div>
+        
+    <script src="script.js" ></script>
+</body>
+</html>
